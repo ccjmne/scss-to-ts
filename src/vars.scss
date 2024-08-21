@@ -1,0 +1,15 @@
+@use 'sass:string';
+
+$background: ghostwhite;
+$foreground: darkslategrey;
+$font-size:  1rem;
+
+@function hsl-str($color) {
+  @return string.unquote('hsl(#{hue($color)}, #{saturation($color)}, #{lightness($color)})');
+}
+
+:export {
+  background: hsl-str($background);
+  foreground: hsl-str($foreground);
+  fontSize:   #{$font-size};
+}

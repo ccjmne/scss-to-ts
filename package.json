@@ -1,0 +1,20 @@
+{
+  "name": "scss-to-ts",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "webpack serve --mode development --port 8043 --open"
+  },
+  "author": "Éric NICOLAS <ccjmne@gmail.com> (ccjmne)",
+  "license": "GPL-3.0",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "ts-loader": "^9.5.1",
+    "typed-scss-modules": "^8.0.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
